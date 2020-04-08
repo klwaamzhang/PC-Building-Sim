@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class IntroPanelController : MonoBehaviour
@@ -25,6 +26,10 @@ public class IntroPanelController : MonoBehaviour
             Image pickImage = aimToPick.GetComponent<Image>();
             pickImage.sprite = aimToPick.GetComponent<AimImageChangeController>().yellowDot;
             pickImage.rectTransform.sizeDelta = new Vector2(5, 5);
+            if(PickupController.itemCount == 4)
+            {
+                SceneManager.LoadScene(1);
+            }
         }
     }
 

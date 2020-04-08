@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PickupController : MonoBehaviour
 {
-    private static int itemCount = 0;
+    public static int itemCount = 0;
 
     Sprite pcItemSprite;
     Sprite pcItemIntroSprite;
