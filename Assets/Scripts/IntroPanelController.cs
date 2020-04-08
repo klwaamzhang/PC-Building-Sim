@@ -16,7 +16,7 @@ public class IntroPanelController : MonoBehaviour
     
     void Update()
     {
-        if (isIntroPanelOpened && Input.GetKeyDown("escape"))
+        if (isIntroPanelOpened && Input.GetKeyDown("z"))
         {
             introPanel.SetActive(false);
         }
