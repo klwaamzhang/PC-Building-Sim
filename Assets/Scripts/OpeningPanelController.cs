@@ -5,6 +5,7 @@ using UnityEngine;
 public class OpeningPanelController : MonoBehaviour
 {
     public static bool isOpeningPanelOpened = true;
+
     GameObject openingPanel;
     // Start is called before the first frame update
     void Start()

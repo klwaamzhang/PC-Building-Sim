@@ -11,17 +11,10 @@ public class ItemManager : MonoBehaviour
 
     private static int itemCount = 0;
     string introNameText;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         introNameText = gameObject.name;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     
     private void OnTriggerEnter(Collider other)

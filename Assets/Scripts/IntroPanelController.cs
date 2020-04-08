@@ -8,14 +8,12 @@ public class IntroPanelController : MonoBehaviour
     public static bool isIntroPanelOpened = false;
 
     GameObject introPanel;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         introPanel = GameObject.Find("UI/Canvas/IntroPanel");
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (isIntroPanelOpened && Input.GetKeyDown("escape"))
