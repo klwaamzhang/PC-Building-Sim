@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class IntroPanelController : MonoBehaviour
@@ -8,17 +9,27 @@ public class IntroPanelController : MonoBehaviour
     public static bool isIntroPanelOpened = false;
 
     GameObject introPanel;
-    
+    GameObject aimToPick;
+
     void Start()
     {
         introPanel = GameObject.Find("UI/Canvas/IntroPanel");
+        aimToPick = GameObject.Find("UI/Canvas/AimToPick");
     }
     
     void Update()
     {
-        if (isIntroPanelOpened && Input.GetKeyDown("escape"))
+        if (isIntroPanelOpened && Input.GetKeyDown("z"))
         {
             introPanel.SetActive(false);
+            // Show dot image
+            Image pickImage = aimToPick.GetComponent<Image>();
+            pickImage.sprite = aimToPick.GetComponent<AimImageChangeController>().yellowDot;
+            pickImage.rectTransform.sizeDelta = new Vector2(5, 5);
+            if(PickupController.itemCount == 4)
+            {
+                SceneManager.LoadScene(1);
+            }
         }
     }
 

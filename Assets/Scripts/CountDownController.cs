@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CountDownController : MonoBehaviour
 {
-    public float timeLeft = 30f;
+    public float timeLeft = 60f;
 
     GameObject openingPanel;
     GameObject introPanel;
@@ -26,6 +27,10 @@ public class CountDownController : MonoBehaviour
         {
             timeLeft -= Time.deltaTime;
             countDownNum.GetComponent<Text>().text = Mathf.Floor(timeLeft).ToString();
+            if(timeLeft <= 0)
+            {
+                SceneManager.LoadScene(0);
+            }
         }
     }
 }
