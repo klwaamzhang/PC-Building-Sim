@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CountDownController : MonoBehaviour
 {
-    public float timeLeft = 30f;
+    public float timeLeft = 60f;
 
     GameObject openingPanel;
     GameObject introPanel;
