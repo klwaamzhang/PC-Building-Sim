@@ -8,10 +8,12 @@ public class IntroPanelController : MonoBehaviour
     public static bool isIntroPanelOpened = false;
 
     GameObject introPanel;
-    
+    GameObject aimToPick;
+
     void Start()
     {
         introPanel = GameObject.Find("UI/Canvas/IntroPanel");
+        aimToPick = GameObject.Find("UI/Canvas/AimToPick");
     }
     
     void Update()
@@ -19,6 +21,10 @@ public class IntroPanelController : MonoBehaviour
         if (isIntroPanelOpened && Input.GetKeyDown("z"))
         {
             introPanel.SetActive(false);
+            // Show dot image
+            Image pickImage = aimToPick.GetComponent<Image>();
+            pickImage.sprite = aimToPick.GetComponent<AimImageChangeController>().yellowDot;
+            pickImage.rectTransform.sizeDelta = new Vector2(5, 5);
         }
     }
 
