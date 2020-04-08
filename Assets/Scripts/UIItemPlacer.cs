@@ -7,6 +7,7 @@ public class UIItemPlacer : MonoBehaviour {
 	public GameObject itemUI;
 	public GameObject item3D;
 	public string itemName;
+	public Text thisIsTheEducationYouGet;
 
 	public bool itemEnabled;
 	public UIItemPlacer nextItemToEnable;
@@ -29,9 +30,6 @@ public class UIItemPlacer : MonoBehaviour {
 
 	public void Clicked() {
 		if (itemEnabled) {
-			itemUI.SetActive(false);
-			item3D.SetActive(true);
-
 			if (!isLast) {
 				nextItemToEnable.itemEnabled = true;
 
@@ -42,9 +40,19 @@ public class UIItemPlacer : MonoBehaviour {
 				instructions.text = "Nice work! You win!";
 			}
 
-			Destroy(this.gameObject);
+			DisableButton();
 		} else {
 			instructions.text = "Wrong! Try again!";
 		}
+	}
+
+	private void DisableButton() {
+		itemUI.SetActive(false);
+		item3D.SetActive(true);
+
+		//Destroy(this.gameObject);
+
+		this.GetComponent<Button>().interactable = false;
+		thisIsTheEducationYouGet.gameObject.SetActive(true);
 	}
 }
