@@ -582,7 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemUI: {fileID: 1720797221}
   item3D: {fileID: 1592818622}
-  itemName: 
+  itemName: Keyboard
   itemEnabled: 0
   nextItemToEnable: {fileID: 0}
   isLast: 1
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemUI: {fileID: 1581586386}
   item3D: {fileID: 1990459907}
-  itemName: 
+  itemName: Mouse
   itemEnabled: 0
   nextItemToEnable: {fileID: 370644407}
   isLast: 0
@@ -2339,8 +2339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemUI: {fileID: 1104043388}
   item3D: {fileID: 1462670541}
-  itemName: 
-  itemEnabled: 0
+  itemName: PC
+  itemEnabled: 1
   nextItemToEnable: {fileID: 1489715730}
   isLast: 0
 --- !u!1001 &1283699548
@@ -2649,7 +2649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemUI: {fileID: 538036734}
   item3D: {fileID: 140425758}
-  itemName: 
+  itemName: Monitor
   itemEnabled: 0
   nextItemToEnable: {fileID: 500243436}
   isLast: 0
