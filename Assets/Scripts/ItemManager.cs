@@ -9,6 +9,8 @@ public class ItemManager : MonoBehaviour
     public Sprite pcItemIntroSprite;
     public Text pcItemIntroContent;
     GameObject aimToPick;
+    public GameObject score_Controller;
+    public int addScore = 150;
 
     void Start()
     {
@@ -33,4 +35,11 @@ public class ItemManager : MonoBehaviour
         pickImage.sprite = aimToPick.GetComponent<AimImageChangeController>().yellowDot;
         pickImage.rectTransform.sizeDelta = new Vector2(5, 5);
     }
+
+    private void OnDisable()
+    {
+        //Add Score
+        score_Controller.GetComponent<Score_Controller>().IncreaseScore(addScore);
+    }
+
 }
