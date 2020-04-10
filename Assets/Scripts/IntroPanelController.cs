@@ -31,6 +31,13 @@ public class IntroPanelController : MonoBehaviour
                 SceneManager.LoadScene(1);
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.O)) // O for Options!
+        {
+            GameObject panel = GameObject.Find("UI/Canvas/Options-Panel");
+            panel.SetActive(!panel.active);
+            Debug.Log("anything?");
+        }
     }
 
     public void ShowIntroPanel(bool openIntroPanel, Sprite pcItemIntroSprite, string introNameText, Text pcItemIntroContent)
