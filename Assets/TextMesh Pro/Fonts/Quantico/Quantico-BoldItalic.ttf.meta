@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 2f5ebdfd590359e499a384603547a8ab
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Quantico
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: dc7221c40ff63d54e8abb47e8643fec8, type: 3}
+  - {fileID: 12800000, guid: aa274ca81fd2f774689a7ad102252806, type: 3}
+  - {fileID: 12800000, guid: 9140970c2d754da49a6cd499355fde6b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
