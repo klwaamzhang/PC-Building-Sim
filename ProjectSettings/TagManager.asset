@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PCItem
   - Fire
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -19,4 +19,12 @@ public class Scene_Changer : MonoBehaviour
     {
         SceneManager.LoadScene("Level 1");
     }
+    public void Lvl2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
+    public void Lvl3()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
 }

@@ -28,7 +28,7 @@ public class IntroPanelController : MonoBehaviour
             pickImage.rectTransform.sizeDelta = new Vector2(5, 5);
             if(PickupController.itemCount == 4)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
             }
         }
 

@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour
 {
     public Text healthAmountText;
-    private int healthAmount = 80;
+    public int healthAmount = 80;
+
+    public int damage = 10;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -21,7 +24,7 @@ public class HealthController : MonoBehaviour
 
     public void AddHealth(int amount)
     {
-        if (this.healthAmount < 100)
+        if (healthAmount < 100)
         {
             healthAmount += amount;
             Debug.Log(amount);
@@ -34,5 +37,15 @@ public class HealthController : MonoBehaviour
         {
             healthAmount -= amount;
         }
+
+        if (healthAmount == 0)
+        {
+            SceneManager.LoadScene("DeathScene");
+        }
+    }
+
+    public void GameOver()
+    {
+        
     }
 }
