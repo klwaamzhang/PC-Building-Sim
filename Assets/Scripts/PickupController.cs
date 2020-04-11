@@ -15,7 +15,7 @@ public class PickupController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        itemCount = 0;
     }
     
     void Update()
