@@ -42,6 +42,12 @@ public class IntroPanelController : MonoBehaviour
             GameObject panel = GameObject.Find("UI/Canvas/Options-Panel");
             panel.SetActive(!panel.active);
             Debug.Log("anything?");
+
+            if (panel.active) {
+                Cursor.lockState = CursorLockMode.None;
+            } else {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
     }
 
