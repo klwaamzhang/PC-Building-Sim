@@ -29,7 +29,7 @@ public class CountDownController : MonoBehaviour
             countDownNum.GetComponent<Text>().text = Mathf.Floor(timeLeft).ToString();
             if(timeLeft <= 0)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene("DeathScene");
             }
         }
     }
