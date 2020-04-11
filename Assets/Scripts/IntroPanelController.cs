@@ -8,6 +8,8 @@ public class IntroPanelController : MonoBehaviour
 {
     public static bool isIntroPanelOpened = false;
 
+    public string nextScene = "WinScene";
+
     GameObject introPanel;
     GameObject aimToPick;
 
@@ -15,6 +17,8 @@ public class IntroPanelController : MonoBehaviour
     {
         introPanel = GameObject.Find("UI/Canvas/IntroPanel");
         aimToPick = GameObject.Find("UI/Canvas/AimToPick");
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
     
     void Update()
@@ -28,7 +32,8 @@ public class IntroPanelController : MonoBehaviour
             pickImage.rectTransform.sizeDelta = new Vector2(5, 5);
             if(PickupController.itemCount == 4)
             {
-                SceneManager.LoadScene(1);
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene(nextScene);
             }
         }
 

@@ -6,21 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DeathScene.unity
-    guid: b173fc850187f3a4b8ec1b30edf6baca
-  - enabled: 1
-    path: Assets/Scenes/WinScene.unity
-    guid: 5bda4826e9662654082e01c043746449
-  - enabled: 1
-    path: Assets/Scenes/WinSceneLevel2.unity
-    guid: 002810d4dc662fb4bbf14d2de6f2caac
-  - enabled: 1
-    path: Assets/Scenes/WinSceneLevel3.unity
-    guid: 97bd77d1023a0d640b0a7663c94829df
-  - enabled: 1
-    path: Assets/Scenes/Level 1.unity
-    guid: 1f6b9e7f1bdf5a642ae4b42a3190dcfb
-  - enabled: 1
     path: Assets/Scenes/Main_Menu.unity
     guid: 1dd11e5a96f72b944ad39981c5148e3d
   - enabled: 1
@@ -30,9 +15,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Options.unity
     guid: 6946e4d9009e33041a38e2b290c8b58c
   - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 1f6b9e7f1bdf5a642ae4b42a3190dcfb
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 5bda4826e9662654082e01c043746449
+  - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 9296c56e083bd644badc41fea4af25ce
   - enabled: 1
+    path: Assets/Scenes/WinSceneLevel2.unity
+    guid: 002810d4dc662fb4bbf14d2de6f2caac
+  - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: 1dd9226e350ae5b43b9b850cb97b9381
+  - enabled: 1
+    path: Assets/Scenes/WinSceneLevel3.unity
+    guid: 97bd77d1023a0d640b0a7663c94829df
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: b173fc850187f3a4b8ec1b30edf6baca
   m_configObjects: {}
