@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class IntroPanelController : MonoBehaviour
+public class IntroPanelController2 : MonoBehaviour
 {
     public static bool isIntroPanelOpened = false;
 
@@ -28,7 +28,7 @@ public class IntroPanelController : MonoBehaviour
             pickImage.rectTransform.sizeDelta = new Vector2(5, 5);
             if(PickupController.itemCount == 4)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene("Level 3");
             }
         }
 

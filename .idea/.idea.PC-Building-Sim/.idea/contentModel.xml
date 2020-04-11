@@ -212,6 +212,7 @@
           <e p="HealthController.cs" t="Include" />
           <e p="HealthPickup.cs" t="Include" />
           <e p="IntroPanelController.cs" t="Include" />
+          <e p="IntroPanelController2.cs" t="Include" />
           <e p="ItemManager.cs" t="Include" />
           <e p="OpeningPanelController.cs" t="Include" />
           <e p="OptionsManager.cs" t="Include" />
